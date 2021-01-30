@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;700;800&display=swap');
+
+/* 
+    1.default css
+ */
+/* default css Start */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.full-wraper {
+    width: 100%;
+
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.center{
+    text-align: center;
+}
+
+.gap {
+    margin-left: 40px;
+}
+
+.gap {
+    margin-left: 40px;
+}
+.mr-30{
+    margin-right: 30px;
+}
+.mr-30{
+    margin-left: 30px;
+}
+.mx-30{
+    margin: 0 30px;
+}
+.mx-15{
+    margin: 0 15px;
+}
+.text-white{
+    color: #fff !important;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+/* default css end */
+.heading {
+    text-align: center;
+}
+
+.heading h3 {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    color: #2222;
+    font-weight: 400;
+    position: relative;
+}
+
+.heading h3::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    background: #fcac45;
+
+}
+
+.heading h3::before {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 3px;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    background: #fcac45;
+}
+
+.heading span {
+    font-weight: 700;
+}
+
+.heading p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    padding-top: 70px;
+    color: #6c6c6c;
+}
+
+
+
+
+
+/* ============= Menu Area Css Start ================ */
+.menu-bg {
+    /* background: #ddd; */
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+}
+
+.menu-bg .menu .logo {
+    width: 210px;
+    float: left;
+}
+
+.menu-bg .menu .logo a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.menu-bg .menu .menu-list {
+    width: 960px;
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul {
+    float: right;
+}
+
+.menu-bg .menu .menu-list ul li {
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul li a {
+    padding-right: 35px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+
+
+}
+
+.menu-bg .menu .menu-list ul li a::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -20px;
+    background: #fff;
+    transition: all linear 0.4s;
+
+}
+
+.menu-bg .menu .menu-list ul li a:hover::after {
+    width: 50%;
+}
+
+.menu-bg .menu .menu-list ul li a::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    right: 0;
+    bottom: -20px;
+    background: #fcac45;
+    transition: all linear 0.4s;
+}
+
+.menu-bg .menu .menu-list ul li a:hover::before {
+    width: 50%;
+}
+
+.menu-bg .menu .menu-list ul li:last-child a {
+    padding-right: 0;
+}
+
+/* ============= Menu Area Css End ================ */
+
+/* Banner Area Start */
+.banner-bg {
+    padding-top: 300px;
+    padding-bottom: 420px;
+    background-image: url(../image/bannar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-bg .banner {
+    text-align: center;
+
+}
+
+.banner-bg .banner h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #999;
+
+}
+
+.banner-bg .banner h1 span {
+    font-weight: 700;
+    color: #fcac45;
+
+}
+
+.banner-bg .banner p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 18px;
+    color: #fff;
+}
+.banner-bg .banner p span {
+    font-weight: 700;
+}
+.banner-bg .banner ul {
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    transform: translateX(-50%);
+}
+.banner-bg .banner ul li{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+    cursor: pointer;
+}
+.banner-bg .banner ul li.active{
+    background: #fcac45;
+}
+/* ================== About ==================== */
+.about-bg {
+    margin-top: 102px;
+    margin-bottom: 102px;
+}
+.about-bg .about .about-mac{
+   width:570px;
+   float: left;
+   position: relative;
+}
+.about-bg .about .about-mac .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.about-bg .about .about-text {
+   width:570px;
+   float: left;
+   padding-left: 98px;
+   box-sizing: border-box;
+}
+.about-bg .about .about-text h4{
+    font-family: 'Open Sans', sans-serif;
+    color: #636363;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+.about-bg .about .about-text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+    position: relative;
+
+}
+.about-bg .about .about-text h3::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #fcac45;
+    left: 0;
+    bottom: -15px;
+}
+.about-bg .about .about-text h3 span{
+    font-weight:700;
+}
+.about-bg .about .about-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c6c6c;
+    line-height: 25px;
+    padding-top: 40px;
+}
+.about-bg .about .about-text ul{
+    margin-top: 48px;
+}
+.about-bg .about .about-text ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+
+}
+.about-bg .about .about-text ul li span{
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+.about-bg .about .about-text ul li i{
+    color: #5a5a5a;
+}
+.about-bg .about .about-text a{
+    border: 3px solid #5a5a5a;
+    font-style: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 45px;
+    color: #5a5a5a;
+    padding: 0 23px;
+
+}
+.about-bg .about .about-text  i{
+    margin-left: 10px;
+}
+
+
+/* ================ Team Area Start ================== */
+.team-bg {
+    background: #070707;
+    padding-top: 100px;
+    padding-bottom: 168px;
+   
+}
+
+.team-bg .team .team-content-area{
+    width: 262px;
+    text-align: center;
+    color: #fff;
+    padding-top:145px ;
+    float: left;
+    
+    
+    
+}
+.team-bg .team .team-content-area h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20PX;
+    color: #ffff;
+    font-size: 400;
+
+}
+
+.team-bg .team .team-content-area h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14PX;
+    color: #ffff;
+    font-size: 300;
+    padding-bottom: 20px;
+
+}
+.team-bg .team .team-content-area p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14PX;
+    color: #ffff;
+    font-size: 300;
+    
+
+}
+
+
+
+/* Services Area Start */
+.services-bg {
+    background: #ffff;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.services-content-area {
+    width: 100%;
+    float: left;
+}
+
+.services-content-area .img-area {
+    float: left;
+    width: 250px;
+    padding-top: 130px;
+
+}
+
+.services-content-area .img-area i {
+    width: 85px;
+    height: 85px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    line-height: 85px;
+    text-align: center;
+    font-size: 40px;
+   
+}
+.services-content-area .img-area h3{
+    font-family: 'Open Sans', sans-serif;
+    font-style: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.services-content-area .img-area p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: 14px;
+    font-weight: 300;
+    padding-top: 20px;
+    
+}
+/* ========== clients ============ */
+.clients-bg {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-image: url(../image/obe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+  
+   
+}
+
+.clients-bg::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .75;
+    z-index: -1;
+   
+}
+
+/* Work Area Start */
+.gallery-bg{
+   padding-top:100px;
+   padding-bottom: 70px;
+   overflow: hidden;
+}
+.gallery-bg .gallery .filter-menu ul{
+    float: right;
+}
+.gallery-bg .gallery .filter-menu ul li{
+    float: left;
+
+}
+.gallery-bg .gallery .filter-menu ul li a{
+    padding: 15px;
+    position: relative;
+    
+}
+.gallery-bg .gallery .filter-menu ul li a::before{
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    background: #5a5a5a;
+    width: 1px;
+    height: 20px;
+}
+
+.gallery-bg .gallery .filter-menu{
+    margin-bottom: 50px;
+}
+.gallery-image{
+    width: 262px;
+    float: left;
+    position: relative;
+}
+.gallery-image .image-overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    text-align: center;
+    opacity: 0;
+    transition: .4s;
+    -moz-transition:.4s ;
+    transform: scale(1);
+    
+}
+.gallery-image .image-overly:hover{
+    opacity: 2;
+    
+   
+}
+.gallery-image .image-overly h3{
+    padding-top: 65px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.gallery-image .image-overly h4{
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #b2b2b2;
+    padding-bottom: 30px;
+}
+.gallery-image .image-overly a i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+   
+    color: #956b35;
+    background: #222222;
+    border: 1px solid #956b35;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.gallery-image img{
+    width: 100%;
+}
+/* Testimonals Area Start */
+.testimonals-bg{
+    background:#23201d ;
+}
+
+
+.testimonals .dot{
+
+    text-align: center;
+}
+.testimonals-bg .testimonals .padding{
+    padding-top: 100px;
+}
+.testimonals-bg .testimonals .padding p{
+    padding-bottom: 50px;
+}
+.testimonals .dot ul {
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+.testimonals .dot ul li{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    /* border: 1px solid red; */
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 0 10px;
+    
+}
+/* Contact Area Start */
